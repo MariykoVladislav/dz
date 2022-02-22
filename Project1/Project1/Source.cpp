@@ -22,6 +22,13 @@ void sortArray(int*& arr, int size)
 		}
 	}
 }
+void printArray(int*& arr, int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		cout << arr[i]<<" ";
+	}
+}
 
 void main()
 {
@@ -29,4 +36,6 @@ void main()
 	int size = 3;
 	int* arr = new int[size];
 	fillArray(arr, size);
+	sortArray(arr, size);
+	printArray(arr, size);
 }
