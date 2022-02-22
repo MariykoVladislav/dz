@@ -9,6 +9,20 @@ void fillArray(int*& arr, int size)
 	}
 }
 
+void sortArray(int*& arr, int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		for (int j = 0; j < size; j++)
+		{
+			if (arr[i] > arr[j])
+			{
+				swap(arr[i], arr[j]);
+			}
+		}
+	}
+}
+
 void main()
 {
 	srand(time(0));
